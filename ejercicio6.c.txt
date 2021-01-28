@@ -1,0 +1,13 @@
+#include <stdio.h>
+
+int main() {
+    
+    int *ptr_int;
+    float *ptr_float;
+    int value;
+    ptr_int = &value;
+    //no se le puede asignar memoria de diferentes tipo de datos float a int.
+    ptr_float = &value;
+    return 0;
+}
+  

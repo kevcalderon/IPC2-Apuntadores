@@ -1,0 +1,15 @@
+#include <stdio.h>
+
+int main() {
+    
+    int a = 10, b = 15;
+    int *const ptr = &a;
+    *ptr = 3;
+    //fue declarado como una constante con una direccion de a, no permite hacer un cambio por ser una cte.
+    ptr = &b;
+    
+    
+    //si se puede hacer cambio de direccion de memoria, pero no el valor como tal de la variable.
+    return 0;
+}
+  

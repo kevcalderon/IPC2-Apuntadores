@@ -1,0 +1,9 @@
+#include <stdio.h>
+
+int main() {
+//definicion de los apuntadores
+    int *ptr_intr;
+    char *ptr_char;
+    float *ptr_float;
+    return 0;
+}

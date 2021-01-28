@@ -1,0 +1,22 @@
+#include <stdio.h>
+
+int main() {
+    struct Articulo {
+        char nombre[20];
+        char descripcion[100];
+        float precio;
+    };
+    
+    //declarar un elemento tipo articulo
+    struct Articulo art;
+    //almacenar el espacio en memoria de la variable art;
+    struct Articulo *ptr_art = &art;
+    
+    (*ptr_art).precio = 50.38;
+    ptr_art -> precio = 50.38;
+    
+    //%f se utiliza por que es tipo float
+    printf("Precio: %f", ptr_art -> precio);
+    return 0;
+}
+  
